@@ -33,3 +33,16 @@ Hello Node!
 error: Module not found "file:///Users/myuser/repos/deno-monorepo-example/libs/example-lib/src/greeting".
     at file:///Users/myuser/repos/deno-monorepo-example/libs/example-lib/src/index.ts:1:15
 ```
+
+### Bun
+
+```sh
+./run.sh bun-app
+```
+
+```
+> node-app@1.0.0 start
+> ts-node src/main.ts
+
+Hello Node!
+```

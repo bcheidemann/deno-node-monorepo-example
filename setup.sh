@@ -8,4 +8,5 @@ npm install
 npm run build
 cd $PROJECT_ROOT/apps/node-app
 npm install
-
+cd $PROJECT_ROOT/apps/bun-app
+bun install
