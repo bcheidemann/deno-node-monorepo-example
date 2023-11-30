@@ -41,8 +41,5 @@ error: Module not found "file:///Users/myuser/repos/deno-monorepo-example/libs/e
 ```
 
 ```
-> node-app@1.0.0 start
-> ts-node src/main.ts
-
-Hello Node!
+Hello Bun!
 ```
