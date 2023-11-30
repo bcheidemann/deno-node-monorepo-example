@@ -1,0 +1,5 @@
+{
+  "imports": {
+    "example-lib": "./libs/example-lib/src/index.ts"
+  }
+}

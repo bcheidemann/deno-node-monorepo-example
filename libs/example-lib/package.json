@@ -1,0 +1,14 @@
+{
+  "name": "example-lib",
+  "version": "1.0.0",
+  "description": "Example library",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "Ben Heidemann <ben@heidemann.dev>",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.3.2"
+  }
+}
