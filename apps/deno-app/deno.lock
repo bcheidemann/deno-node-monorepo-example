@@ -1,0 +1,15 @@
+{
+  "version": "3",
+  "packages": {
+    "specifiers": {
+      "npm:add@^2.0.6": "npm:add@2.0.6"
+    },
+    "npm": {
+      "add@2.0.6": {
+        "integrity": "sha512-j5QzrmsokwWWp6kUcJQySpbG+xfOBqqKnup3OIk1pz+kB/80SLorZ9V8zHFLO92Lcd+hbvq8bT+zOGoPkmBV0Q==",
+        "dependencies": {}
+      }
+    }
+  },
+  "remote": {}
+}

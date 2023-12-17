@@ -1,5 +1,6 @@
 {
   "imports": {
-    "/example-lib": "./libs/example-lib/src/index.ts"
+    "/example-lib": "./libs/example-lib/src/index.ts",
+    "add": "npm:add@^2.0.6"
   }
 }
