@@ -29,9 +29,19 @@ Hello Node!
 ./run.sh deno-app
 ```
 
+```text
+Warning Sloppy imports are not recommended and have a negative impact on performance.
+Warning Sloppy module resolution (hint: add .ts extension)
+    at file:///home/ben/repos/deno-node-monorepo-example/libs/example-lib/src/index.ts:1:15
+Hello Deno
 ```
-error: Module not found "file:///Users/myuser/repos/deno-monorepo-example/libs/example-lib/src/greeting".
-    at file:///Users/myuser/repos/deno-monorepo-example/libs/example-lib/src/index.ts:1:15
+
+This now works, despite the warning. However, type checking this will produce errors and the VS Code extension also doesn't offer support for unstable sloppy imports.
+
+```sh
+$ deno check --unstable-sloppy-imports apps/deno-app/main.ts
+error: Module not found "file:///example-lib".
+    at file:///home/ben/repos/deno-node-monorepo-example/apps/deno-app/main.ts:1:29
 ```
 
 ### Bun

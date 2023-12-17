@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-deno run main.ts
+deno run --unstable-sloppy-imports main.ts

@@ -1,5 +1,5 @@
 {
   "imports": {
-    "example-lib": "./libs/example-lib/src/index.ts"
+    "/example-lib": "./libs/example-lib/src/index.ts"
   }
 }
