@@ -8,48 +8,73 @@ This repo is a minimal example to demonstrate the difficulties of sharing code b
 ./setup.sh
 ```
 
-## Run
+## Apps
 
 ### Node
 
 ```sh
-./run.sh node-app
-```
+$ ./run.sh node-app
 
-```
 > node-app@1.0.0 start
 > ts-node src/main.ts
 
 Hello Node!
 ```
 
+```sh
+$ ./check.sh app node-app
+
+> node-app@1.0.0 check
+> tsc --noEmit
+
+```
+
 ### Deno
 
 ```sh
-./run.sh deno-app
-```
-
-```text
+$ ./run.sh deno-app
 Warning Sloppy imports are not recommended and have a negative impact on performance.
 Warning Sloppy module resolution (hint: add .ts extension)
-    at file:///home/ben/repos/deno-node-monorepo-example/libs/example-lib/src/index.ts:1:15
-Hello Deno
+    at file:///home/user/repos/deno-node-monorepo-example/libs/example-lib/src/index.ts:1:15
+Hello Deno!
 ```
-
-This now works, despite the warning. However, type checking this will produce errors and the VS Code extension also doesn't offer support for unstable sloppy imports.
 
 ```sh
-$ deno check --unstable-sloppy-imports apps/deno-app/main.ts
-error: Module not found "file:///example-lib".
-    at file:///home/ben/repos/deno-node-monorepo-example/apps/deno-app/main.ts:1:29
+$ ./check.sh app deno-app
+Warning Sloppy module resolution (hint: add .ts extension)
+    at file:///home/user/repos/deno-node-monorepo-example/libs/example-lib/src/index.ts:1:15
+Warning Sloppy module resolution (hint: add .ts extension)
+    at file:///home/user/repos/deno-node-monorepo-example/libs/example-lib/src/index.ts:1:15
 ```
+
+As of Deno v1.39.0 this now works fine. However, for editor support we must either:
+
+1. Have a single root-level `deno.json` for all deno projects in our monorepo
+2. Set `deno.config` in `.vscode/settings.json`, prohibiting multiple Deno projects in our monorepo
 
 ### Bun
 
 ```sh
-./run.sh bun-app
+$ ./run.sh bun-app
+Hello Bun!
 ```
 
+```sh
+$ ./check.sh app bun-app
+
+> check
+> tsc --noEmit
+
 ```
-Hello Bun!
+
+## Libs
+
+### Example
+
+```sh
+$ ./check.sh lib example-lib
+
+> example-lib@1.0.0 check
+> tsc --noEmit
+
 ```

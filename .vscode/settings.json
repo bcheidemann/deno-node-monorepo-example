@@ -2,6 +2,5 @@
   "deno.enablePaths": [
     "apps/deno-app"
   ],
-  "deno.unstable": true,
-  "deno.importMap": "./import_map.json",
+  "deno.config": "./apps/deno-app/deno.json",
 }

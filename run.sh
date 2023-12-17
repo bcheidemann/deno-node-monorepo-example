@@ -8,5 +8,4 @@ if [ -z "$APP_NAME" ]; then
   exit 1
 fi
 
-cd $PROJECT_ROOT/apps/$APP_NAME
-./run.sh
+cd $PROJECT_ROOT/apps/$APP_NAME && ./run.sh

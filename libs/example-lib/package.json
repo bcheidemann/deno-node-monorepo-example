@@ -4,7 +4,8 @@
   "description": "Example library",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "check": "tsc --noEmit"
   },
   "author": "Ben Heidemann <ben@heidemann.dev>",
   "license": "ISC",

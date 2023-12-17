@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-deno run main.ts
+deno check main.ts

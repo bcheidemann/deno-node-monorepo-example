@@ -2,6 +2,9 @@
   "name": "bun-app",
   "module": "main.ts",
   "type": "module",
+  "scripts": {
+    "check": "tsc --noEmit"
+  },
   "devDependencies": {
     "bun-types": "latest"
   },

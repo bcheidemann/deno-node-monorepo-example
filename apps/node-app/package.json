@@ -4,7 +4,8 @@
   "description": "Node app",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node src/main.ts"
+    "start": "ts-node src/main.ts",
+    "check": "tsc --noEmit"
   },
   "author": "Ben Heidemann <ben@heidemann.dev>",
   "license": "ISC",
