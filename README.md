@@ -26,7 +26,7 @@ Hello Node!
 ### Deno
 
 ```sh
-./run.sh node-app
+./run.sh deno-app
 ```
 
 ```
